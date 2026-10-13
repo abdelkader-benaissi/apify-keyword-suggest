@@ -1,1 +1,40 @@
-{"properties":{"country":{"default":"us","description":"gl parameter for the Suggest API (e.g. us, fr, dz).","prefill":"us","title":"Country","type":"string"},"expandAlphabet":{"default":true,"description":"Also query '<seed> a' … '<seed> z' and '<seed> 0' … '<seed> 9' (37 queries per seed) to harvest many more suggestions.","editor":"checkbox","title":"Expand alphabet","type":"boolean"},"keywords":{"description":"Seed keywords, one per line. Each seed is queried directly, and optionally expanded into '<seed> a' … '<seed> z', '<seed> 0' … '<seed> 9'.","editor":"textarea","prefill":"web scraping","title":"Keywords","type":"string"},"language":{"default":"en","description":"hl parameter for the Suggest API (e.g. en, fr, ar).","prefill":"en","title":"Language","type":"string"}},"required":["keywords"],"schemaVersion":1,"title":"Keyword Suggest Research input","type":"object"}
+{
+  "properties": {
+    "country": {
+      "default": "us",
+      "description": "gl parameter for the Suggest API (e.g. us, fr, dz).",
+      "prefill": "us",
+      "title": "Country",
+      "type": "string",
+      "editor": "textfield"
+    },
+    "expandAlphabet": {
+      "default": true,
+      "description": "Also query '<seed> a' \u2026 '<seed> z' and '<seed> 0' \u2026 '<seed> 9' (37 queries per seed) to harvest many more suggestions.",
+      "editor": "checkbox",
+      "title": "Expand alphabet",
+      "type": "boolean"
+    },
+    "keywords": {
+      "description": "Seed keywords, one per line. Each seed is queried directly, and optionally expanded into '<seed> a' \u2026 '<seed> z', '<seed> 0' \u2026 '<seed> 9'.",
+      "editor": "textarea",
+      "prefill": "web scraping",
+      "title": "Keywords",
+      "type": "string"
+    },
+    "language": {
+      "default": "en",
+      "description": "hl parameter for the Suggest API (e.g. en, fr, ar).",
+      "prefill": "en",
+      "title": "Language",
+      "type": "string",
+      "editor": "textfield"
+    }
+  },
+  "required": [
+    "keywords"
+  ],
+  "schemaVersion": 1,
+  "title": "Keyword Suggest Research input",
+  "type": "object"
+}
