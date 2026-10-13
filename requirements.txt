@@ -1,0 +1,4 @@
+# Apify SDK (installed explicitly: the base image does not guarantee it) +
+# plain HTTP client for Google's public Suggest API.
+apify
+httpx
